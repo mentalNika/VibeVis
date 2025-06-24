@@ -16,6 +16,8 @@ import {
   IconCircleArrowUpRightFilled,
 } from "@tabler/icons-react";
 import { FC, useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 const socialLinks = [
   {
@@ -39,13 +41,14 @@ const socialLinks = [
 ];
 
 const navLinks = [
-  { id: 1, href: "#", label: "Главная" },
-  { id: 2, href: "#", label: "Портфолио" },
-  { id: 3, href: "#", label: "Условия" },
-  { id: 4, href: "#", label: "Контакты" },
+  { id: 1, href: "/", label: "Главная" },
+  { id: 2, href: "/portfolio", label: "Портфолио" },
+  { id: 3, href: "/conditions", label: "Условия" },
+  { id: 4, href: "/contacts", label: "Контакты" },
 ];
 
 export const MainHeader: FC = () => {
+  const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] =
     useDisclosure(false);
@@ -62,10 +65,14 @@ export const MainHeader: FC = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [scrolled]);
 
+  const isDark = pathname !== "/";
+
   return (
     <Box>
       <header
-        className={`${classes.header} ${scrolled ? classes.scrolled : ""}`}
+        className={`${classes.header} ${scrolled ? classes.scrolled : ""} ${
+          isDark && classes.headerWhite
+        }`}
       >
         <Group justify="space-between" h="100%">
           <a href="#" className={classes.logoLink}>
@@ -86,7 +93,11 @@ export const MainHeader: FC = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <Icon size={20} color={scrolled ? "#000" : "#fff"} />
+                  {scrolled || isDark ? (
+                    <Icon size={20} color={"#000"} />
+                  ) : (
+                    <Icon size={20} color={"#fff"} />
+                  )}
                 </a>
               );
             })}
@@ -94,9 +105,15 @@ export const MainHeader: FC = () => {
 
           <Group h="100%" gap={0} visibleFrom="sm">
             {navLinks.map((link) => (
-              <a key={link.id} href={link.href} className={classes.link}>
+              <Link
+                key={link.id}
+                href={link.href}
+                className={`${classes.link} ${
+                  pathname === link.href ? classes.active : ""
+                }`}
+              >
                 {link.label}
-              </a>
+              </Link>
             ))}
           </Group>
 
@@ -123,9 +140,16 @@ export const MainHeader: FC = () => {
         <ScrollArea h="calc(100vh - 80px)" mx="-md">
           <Divider my="sm" />
           {navLinks.map((link) => (
-            <a key={link.id} href={link.href} className={classes.link}>
+            <Link
+              key={link.id}
+              href={link.href}
+              className={`${classes.link} ${
+                pathname === link.href ? classes.active : ""
+              }`}
+              onClick={closeDrawer}
+            >
               {link.label}
-            </a>
+            </Link>
           ))}
           <Divider my="sm" />
           <Group pl="md">

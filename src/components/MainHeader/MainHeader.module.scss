@@ -78,3 +78,11 @@
     display: none;
   }
 }
+
+.headerWhite {
+  background-color: #fff;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+  .link {
+    color: #000;
+  }
+}

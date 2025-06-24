@@ -8,6 +8,7 @@ import {
   Text,
   Button,
   Drawer,
+  List,
 } from "@mantine/core";
 
 const CONTAINER_SIZES: Record<string, number> = {
@@ -125,6 +126,13 @@ export const theme = createTheme({
           borderRadius: "100px",
           backgroundColor: "#fff",
         },
+      },
+    }),
+    List: List.Item.extend({
+      defaultProps: {
+        c: "textPrimaryDark",
+        fz: { base: 16, ixs: 14 },
+        fw: 400,
       },
     }),
   },

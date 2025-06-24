@@ -54,7 +54,13 @@ export const Visualisation: FC = () => {
                 onClick={() => handleImageClick("/mainSlider/3.jpg")}
                 alt="Интерьерная визуализация"
               />
-              <Title order={2} fz={{ base: 18, md: 30 }} fw={600} mt={"lg"}>
+              <Title
+                order={2}
+                fz={{ base: 32, md: 30 }}
+                fw={400}
+                mt={"lg"}
+                ff={"forum"}
+              >
                 Интерьерная визуализация
               </Title>
               <Text mt="sm" mb="lg">
@@ -72,7 +78,13 @@ export const Visualisation: FC = () => {
                 onClick={() => handleImageClick("/mainSlider/1.jpg")}
                 alt="Предметная визуализация"
               />
-              <Title order={2} fz={{ base: 18, md: 30 }} fw={600} mt={"lg"}>
+              <Title
+                order={2}
+                fz={{ base: 32, md: 30 }}
+                fw={400}
+                mt={"lg"}
+                ff={"forum"}
+              >
                 Предметная визуализация
               </Title>
               <Text mt="sm" mb="lg">

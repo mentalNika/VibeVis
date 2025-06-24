@@ -41,11 +41,7 @@ export const MainSlider: FC = () => {
   return (
     <Box className={classes.container}>
       <a href="#">
-        <Image
-          src="/mainSlider/lightLogo.png"
-          alt="VibeViz"
-          className={classes.logo}
-        />
+        <Image src="/lightLogo.png" alt="VibeViz" className={classes.logo} />
       </a>
 
       <Swiper
@@ -72,13 +68,23 @@ export const MainSlider: FC = () => {
                 />
                 <Box className={classes.overlay} />
                 <Title
-                  fz={{ base: 35, md: 50 }}
+                  fz={{ base: 30, md: 60 }}
                   fw={300}
                   order={1}
                   className={classes.title}
                   c="white.0"
                 >
                   Интерьерная визуализация
+                </Title>
+                <Title
+                  fz={{ base: 18, md: 30 }}
+                  fw={300}
+                  order={2}
+                  className={classes.subTitle}
+                  c="white.0"
+                  visibleFrom="md"
+                >
+                  От идеи – к реалистичному образу
                 </Title>
               </Box>
             </Box>
