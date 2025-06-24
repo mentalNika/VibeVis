@@ -4,9 +4,9 @@ import React, { FC } from "react";
 
 export const LogoBlock: FC = () => {
   return (
-    <Center pt={110} pb={{ base: 50, md: 110 }}>
+    <Center pt={{ base: 0, sm: 110 }} pb={60}>
       <Link href="/">
-        <Image src="/logo.png" w={110} alt="VibeVis" />
+        <Image src="/logo.png" w={110} alt="VibeVis" visibleFrom="sm" />
       </Link>
     </Center>
   );

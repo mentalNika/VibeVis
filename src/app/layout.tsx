@@ -70,7 +70,11 @@ export default async function RootLayout({
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
-      <body style={{ fontFamily: "Ubuntu, Forum, sans-serif" }}>
+      <body
+        style={{
+          fontFamily: "Ubuntu, Forum, sans-serif",
+        }}
+      >
         <MantineProvider theme={theme}>
           <Container size="xl" p={0} bg={"white.0"}>
             <MainHeader />

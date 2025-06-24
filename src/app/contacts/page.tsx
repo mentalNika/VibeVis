@@ -1,6 +1,6 @@
-import { ConditionsPage } from "@/components/pages/ConditionsPage/ConditionsPage";
+import { ContactsPage } from "@/components/pages/ContactsPage/ContactsPage";
 import React from "react";
 
 export default function page() {
-  return <ConditionsPage />;
+  return <ContactsPage />;
 }
