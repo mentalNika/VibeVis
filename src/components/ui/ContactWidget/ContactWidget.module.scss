@@ -1,0 +1,63 @@
+.modalContent {
+  background-color: #fff;
+  border-radius: 0;
+  width: 550px;
+  max-width: 90vw;
+  padding: 30px 30px 50px 30px;
+  margin: 0 auto;
+}
+
+.modalHeader {
+  background-color: #fff;
+  padding: 1rem;
+
+  .mantine-Modal-close {
+    color: #000;
+  }
+}
+
+.modalClose {
+  color: #000;
+  border-radius: 100px;
+
+  &:hover {
+    background: transparent;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.modalBody {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.img {
+  position: fixed;
+  bottom: 20px;
+  right: 8px;
+  z-index: 10;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: #000;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  svg {
+    flex-shrink: 0;
+  }
+}

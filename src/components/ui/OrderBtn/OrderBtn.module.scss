@@ -1,0 +1,17 @@
+.link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 18px 40px;
+  background: #2b2b2b;
+  border-radius: 100px;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  transition: background 0.3s ease;
+}
+
+.link:hover {
+  background: #444;
+}

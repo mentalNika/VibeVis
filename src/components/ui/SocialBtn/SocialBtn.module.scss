@@ -1,0 +1,30 @@
+.link {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 0;
+  background: transparent;
+  border-radius: 8px;
+  border: 1px solid #000;
+  text-transform: uppercase;
+  color: #000;
+  font-size: 12px;
+  font-weight: 400;
+  transition: background 0.3s ease, color 0.3s ease;
+
+  svg {
+    transition: color 0.3s ease;
+    color: #000;
+  }
+
+  &:hover {
+    background: #2b2b2b;
+    color: #fff;
+
+    svg {
+      color: #fff;
+    }
+  }
+}
