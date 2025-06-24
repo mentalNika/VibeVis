@@ -1,8 +1,12 @@
 import "@mantine/core/styles.css";
 import "./globals.scss";
-import { MantineProvider } from "@mantine/core";
+import { Container, MantineProvider } from "@mantine/core";
 import { theme } from "./theme";
 import { Ubuntu } from "next/font/google";
+import { Footer } from "@/components/Footer";
+import { MainHeader } from "@/components/MainHeader/MainHeader";
+import { ContactWidget } from "@/components/ui/ContactWidget/ContactWidget";
+import { ScrollToTopBtn } from "@/components/ui/ScrollToTopBtn/ScrollToTopButton";
 
 export const UbuntuFont = Ubuntu({
   subsets: ["latin", "cyrillic"],
@@ -62,7 +66,15 @@ export default async function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
       <body style={{ fontFamily: "Ubuntu, sans-serif" }}>
-        <MantineProvider theme={theme}>{children}</MantineProvider>
+        <MantineProvider theme={theme}>
+          <Container size="xl" p={0} bg={"white.0"}>
+            <MainHeader />
+            {children}
+            <Footer />
+            <ScrollToTopBtn />
+            <ContactWidget />
+          </Container>
+        </MantineProvider>
       </body>
     </html>
   );
