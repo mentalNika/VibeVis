@@ -36,6 +36,14 @@ export const theme = createTheme({
     lg: "1440px",
     xl: "1920px",
   },
+  spacing: {
+    // xs: "360px",
+    ixs: "10px",
+    sm: "30px",
+    // md: "1200px",
+    // lg: "1440px",
+    xl: "50px",
+  },
   colors: {
     white: [
       "#fff",

@@ -1,0 +1,29 @@
+.zoomContainer {
+  overflow: hidden;
+  border-radius: 15px;
+  position: relative;
+}
+
+.zoomInner {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s ease;
+  transform-origin: center center;
+
+  .image {
+    object-fit: cover;
+    transition: transform 0.8s ease;
+  }
+
+  &:hover {
+    img {
+      transform: scale(1.2);
+    }
+  }
+}
+
+.image {
+  aspect-ratio: 1 / 1;
+  height: auto;
+}

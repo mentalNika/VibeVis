@@ -12,6 +12,7 @@
     "@mantine/core": "^8.1.1",
     "@mantine/hooks": "^8.1.1",
     "@tabler/icons-react": "^3.34.0",
+    "lightgallery": "^2.9.0-beta.1",
     "motion": "^12.19.1",
     "next": "15.3.4",
     "react": "^19.0.0",
