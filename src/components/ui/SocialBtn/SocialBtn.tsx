@@ -34,6 +34,7 @@ export const SocialBtn = ({
       href={link}
       target="_blank"
       rel="noopener noreferrer"
+      aria-label="Связаться с визуализатором в соцсети"
     >
       {getIcon()}
       {text}

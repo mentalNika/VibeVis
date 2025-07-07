@@ -46,14 +46,19 @@ export const Visualisation: FC = () => {
             justify="center"
           >
             <Box h={"100%"}>
-              <Image
-                src="/mainSlider/3.jpg"
-                w={"100%"}
-                h={{ base: 500, lg: 847 }}
-                style={{ cursor: "pointer" }}
+              <button
                 onClick={() => handleImageClick("/mainSlider/3.jpg")}
-                alt="Интерьерная визуализация"
-              />
+                aria-label="Открыть картинку"
+              >
+                <Image
+                  src="/mainSlider/3.jpg"
+                  w={"100%"}
+                  h={{ base: 500, lg: 847 }}
+                  style={{ cursor: "pointer" }}
+                  alt="Интерьерная визуализация"
+                />
+              </button>
+
               <Title
                 order={2}
                 fz={{ base: 32, md: 30 }}
@@ -70,14 +75,19 @@ export const Visualisation: FC = () => {
               <OrderBtn icon="tg" link="https://t.me/+79180650811" />
             </Box>
             <Box h={"100%"}>
-              <Image
-                src="/mainSlider/1.jpg"
-                w={"100%"}
-                h={{ base: 500, lg: 847 }}
-                style={{ cursor: "pointer" }}
+              <button
                 onClick={() => handleImageClick("/mainSlider/1.jpg")}
-                alt="Предметная визуализация"
-              />
+                aria-label="Открыть картинку"
+              >
+                <Image
+                  src="/mainSlider/1.jpg"
+                  w={"100%"}
+                  h={{ base: 500, lg: 847 }}
+                  style={{ cursor: "pointer" }}
+                  alt="Предметная визуализация"
+                />
+              </button>
+
               <Title
                 order={2}
                 fz={{ base: 32, md: 30 }}

@@ -1,7 +1,6 @@
 import { Center, Image, Stack, Title, Text, Anchor } from "@mantine/core";
 import React, { FC } from "react";
 import { SocialBtn } from "./ui/SocialBtn/SocialBtn";
-import { base } from "motion/react-client";
 
 export const Contacts: FC = () => {
   return (
@@ -23,7 +22,7 @@ export const Contacts: FC = () => {
         >
           3D ВИЗУАЛИЗАТОР АЛЕКСАНДР
         </Title>
-        <Text>Для связи со мной напишимте мне в соцсетях:</Text>
+        <Text>Для связи со мной напишите мне в соцсетях:</Text>
         <SocialBtn icon="tg" link="qwff" text="Telegram" />
         <SocialBtn icon="inst" link="qwff" text="Instagram" />
         <SocialBtn icon="wa" link="qwff" text="WhatsApp" />

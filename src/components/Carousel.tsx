@@ -75,7 +75,7 @@ export const Carousel: FC = () => {
             loop
             onClick={(swiper) => swiper.slideNext()}
             keyboard={{ enabled: true }}
-            autoplay={{ delay: 2200, disableOnInteraction: false }}
+            autoplay={{ delay: 3200, disableOnInteraction: false }}
             slidesPerView={3}
             spaceBetween={22}
             pagination={{

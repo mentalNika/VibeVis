@@ -75,13 +75,13 @@ export const MainHeader: FC = () => {
         }`}
       >
         <Group justify="space-between" h="100%">
-          <a href="#" className={classes.logoLink}>
-            {scrolled ? (
+          <Link href="/" className={classes.logoLink}>
+            {scrolled || isDark ? (
               <Image src="/logo.png" w={30} alt="VibeVis" />
             ) : (
               <Image src="/lightLogo.png" w={30} alt="VibeVis" />
             )}
-          </a>
+          </Link>
 
           <Group visibleFrom="sm">
             {socialLinks.map((link) => {
@@ -92,6 +92,7 @@ export const MainHeader: FC = () => {
                   href={link.href}
                   target="_blank"
                   rel="noreferrer"
+                  aria-label={`Связаться с визуализатором в соцсети ${link.label}`}
                 >
                   {scrolled || isDark ? (
                     <Icon size={20} color={"#000"} />
@@ -121,7 +122,7 @@ export const MainHeader: FC = () => {
             opened={drawerOpened}
             onClick={toggleDrawer}
             hiddenFrom="sm"
-            color={scrolled ? "#000" : "#fff"}
+            color={scrolled || isDark ? "#000" : "#fff"}
           />
         </Group>
       </header>
@@ -134,7 +135,7 @@ export const MainHeader: FC = () => {
         hiddenFrom="sm"
         zIndex={1000000}
         title={
-          <Image src="/logo.png" alt="VibeVis" height={30} fit="contain" />
+          <Image src="/logo.png" alt="VibeVis" height={40} fit="contain" />
         }
       >
         <ScrollArea h="calc(100vh - 80px)" mx="-md">
@@ -143,9 +144,7 @@ export const MainHeader: FC = () => {
             <Link
               key={link.id}
               href={link.href}
-              className={`${classes.link} ${
-                pathname === link.href ? classes.active : ""
-              }`}
+              className={classes.link}
               onClick={closeDrawer}
             >
               {link.label}

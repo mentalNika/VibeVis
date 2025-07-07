@@ -31,6 +31,7 @@ export const ScrollToTopBtn = () => {
       radius="xl"
       variant="filled"
       className={`${classes.icon} ${visible ? classes.visible : ""}`}
+      aria-label="Вернуться в начало страницы"
     >
       <IconArrowUp size={20} />
     </ActionIcon>
