@@ -9,7 +9,7 @@ import {
   Modal,
   ActionIcon,
   rem,
-  Flex,
+  SimpleGrid,
 } from "@mantine/core";
 import { IconX } from "@tabler/icons-react";
 import { OrderBtn } from "./ui/OrderBtn/OrderBtn";
@@ -40,18 +40,14 @@ export const Visualisation: FC = () => {
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
         <Center bg={"white.1"} px={{ base: 10, md: 50 }} py={50}>
-          <Flex
-            gap={{ base: "40", md: "50" }}
-            wrap={{ base: "wrap", lg: "nowrap" }}
-            justify="center"
-          >
-            <Box h={"100%"}>
+          <SimpleGrid cols={{ base: 1, md: 2 }} spacing={50}>
+            <Box h={"100%"} maw={{ base: 500, lg: 850 }}>
               <button
-                onClick={() => handleImageClick("/mainSlider/3.jpg")}
+                onClick={() => handleImageClick("/visualisations/1.jpg")}
                 aria-label="Открыть картинку"
               >
                 <Image
-                  src="/mainSlider/3.jpg"
+                  src="/visualisations/1.jpg"
                   w={"100%"}
                   h={{ base: 500, lg: 847 }}
                   style={{ cursor: "pointer" }}
@@ -68,19 +64,20 @@ export const Visualisation: FC = () => {
               >
                 Интерьерная визуализация
               </Title>
-              <Text mt="sm" mb="lg">
-                Делаю визуализацию жилых и коммерческих помещений.
+              <Text mt="xs" mb="lg">
+                Делаю визуализацию жилых помещений, а также предметную
+                визуализацию.
               </Text>
 
               <OrderBtn icon="tg" link="https://t.me/+79180650811" />
             </Box>
-            <Box h={"100%"}>
+            <Box h={"100%"} maw={{ base: 500, lg: 850 }}>
               <button
-                onClick={() => handleImageClick("/mainSlider/1.jpg")}
+                onClick={() => handleImageClick("/visualisations/2.jpg")}
                 aria-label="Открыть картинку"
               >
                 <Image
-                  src="/mainSlider/1.jpg"
+                  src="/visualisations/2.jpg"
                   w={"100%"}
                   h={{ base: 500, lg: 847 }}
                   style={{ cursor: "pointer" }}
@@ -95,15 +92,15 @@ export const Visualisation: FC = () => {
                 mt={"lg"}
                 ff={"forum"}
               >
-                Предметная визуализация
+                Коммерческие помещения
               </Title>
-              <Text mt="sm" mb="lg">
-                Работаю с мебельными фабриками, производителями окон, дверей,
-                декора и т. д. связанными с интерьерами.
+              <Text mt="xs" mb="lg">
+                Создаю визуализации для бизнеса: кафе, ресторанов, офисов,
+                магазинов и других общественных пространств.
               </Text>
               <OrderBtn icon="tg" link="https://t.me/+79180650811" />
             </Box>
-          </Flex>
+          </SimpleGrid>
 
           <Modal
             opened={!!openedImage}
@@ -117,7 +114,7 @@ export const Visualisation: FC = () => {
               blur: 1,
             }}
           >
-            <Box pos="relative" w="90vw">
+            <Box pos="relative" w="100%">
               <ActionIcon
                 onClick={closeModal}
                 size="xl"

@@ -19,21 +19,30 @@ import { FC } from "react";
 export const mainSlides = [
   {
     id: 1,
-    img: "/mainSlider/1.jpg",
-    title: "Отель в Москве",
-    subtitle: "Отель на улице Атмана Матвеева напротив Кремля",
+    img: "/mainSlider/1.webp",
   },
   {
     id: 2,
-    img: "/mainSlider/2.jpg",
-    title: "Отель в Нидерландах",
-    subtitle: "Дизайн Артемия Лебедева",
+    img: "/mainSlider/2.webp",
   },
+
   {
     id: 3,
-    img: "/mainSlider/3.jpg",
-    title: "Квартира в Москве",
-    subtitle: "Квартира для Шамана",
+    img: "/mainSlider/3.webp",
+  },
+  {
+    id: 4,
+    img: "/mainSlider/4.webp",
+  },
+
+  {
+    id: 5,
+    img: "/mainSlider/5.webp",
+  },
+
+  {
+    id: 6,
+    img: "/mainSlider/6.webp",
   },
 ];
 
@@ -59,11 +68,7 @@ export const MainSlider: FC = () => {
           <SwiperSlide key={slide.id}>
             <Box className={classes.slideContainer}>
               <Box className={classes.slideWrapper}>
-                <Image
-                  src={slide.img}
-                  className={classes.slideImage}
-                  alt={slide.title}
-                />
+                <Image src={slide.img} className={classes.slideImage} alt="" />
                 <Box className={classes.overlay} />
                 <Title
                   fz={{ base: 30, md: 60 }}

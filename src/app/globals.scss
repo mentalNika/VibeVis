@@ -27,3 +27,13 @@ button {
   background-color: transparent;
   border: none;
 }
+
+/* globals.scss */
+.lg-outer .lg-thumb-item {
+  border-color: #202020 !important;
+}
+
+.lg-outer .lg-thumb-item.active,
+.lg-outer .lg-thumb-item:hover {
+  border-color: #e6e6e6 !important;
+}

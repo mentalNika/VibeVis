@@ -3,7 +3,8 @@ import React, { FC } from "react";
 import { PortfolioItem } from "../pages/PortfolioPage/PortfolioPage";
 import classes from "./PortfolioCards.module.scss";
 
-import { Box, Image, SimpleGrid, Text } from "@mantine/core";
+import { Box, Image, SimpleGrid, Title } from "@mantine/core";
+import Link from "next/link";
 
 interface Props {
   data: PortfolioItem[];
@@ -18,7 +19,7 @@ export const PortfolioCards: FC<Props> = ({ data }) => {
       {data?.map((card) => (
         <Box key={card.id} maw={460}>
           <Box className={classes.zoomContainer}>
-            <a href="https://mantine.dev/" className={classes.zoomInner}>
+            <Link href={`/portfolio/${card.id}`} className={classes.zoomInner}>
               <Image
                 src={card.preview}
                 height={460}
@@ -27,11 +28,11 @@ export const PortfolioCards: FC<Props> = ({ data }) => {
                 radius={15}
                 className={classes.image}
               />
-            </a>
+            </Link>
           </Box>
-          <Text ta="center" mt="ixs">
+          <Title order={2} ff="forum" ta="center" mt="ixs">
             {card.title}
-          </Text>
+          </Title>
         </Box>
       ))}
     </SimpleGrid>
