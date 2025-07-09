@@ -2,11 +2,13 @@ import { GalleryPage } from "@/components/pages/GalleryPage/GalleryPage";
 import { portfolioData } from "@/components/pages/PortfolioPage/PortfolioPage";
 import type { Metadata } from "next";
 
+type PageParams = {
+  params: { id: string };
+};
+
 export async function generateMetadata({
   params,
-}: {
-  params: { id: string };
-}): Promise<Metadata> {
+}: PageParams): Promise<Metadata> {
   const project = portfolioData.find((item) => item.id === Number(params.id));
 
   if (!project) {
