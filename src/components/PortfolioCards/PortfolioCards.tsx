@@ -3,7 +3,7 @@ import React, { FC } from "react";
 import { PortfolioItem } from "../pages/PortfolioPage/PortfolioPage";
 import classes from "./PortfolioCards.module.scss";
 
-import { Box, Image, SimpleGrid, Title } from "@mantine/core";
+import { Box, Image, SimpleGrid, Text } from "@mantine/core";
 import Link from "next/link";
 
 interface Props {
@@ -30,9 +30,9 @@ export const PortfolioCards: FC<Props> = ({ data }) => {
               />
             </Link>
           </Box>
-          <Title order={2} ff="forum" ta="center" mt="ixs">
+          <Text ff="forum" fz={28} ta="center" mt="ixs">
             {card.title}
-          </Title>
+          </Text>
         </Box>
       ))}
     </SimpleGrid>

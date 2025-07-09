@@ -7,6 +7,7 @@ import { Footer } from "@/components/Footer";
 import { MainHeader } from "@/components/MainHeader/MainHeader";
 import { ContactWidget } from "@/components/ui/ContactWidget/ContactWidget";
 import { ScrollToTopBtn } from "@/components/ui/ScrollToTopBtn/ScrollToTopButton";
+import { Metadata } from "next";
 
 export const UbuntuFont = Ubuntu({
   subsets: ["latin", "cyrillic"],
@@ -19,46 +20,43 @@ export const ForumFont = Forum({
   variable: "--forum",
 });
 
-export const metadata = {
-  // metadataBase: new URL(process.env.NEXT_PUBLIC_HOST as string),
-  title: {
-    template: "VibeViz | %s",
-    default: "VibeViz",
-  },
-  description: "Виз",
-  icons: {
-    icon: "/favicon.ico", // ← здесь правильно
-  },
-
+export const metadata: Metadata = {
+  title: "VibeVis | 3D визуализатор интерьера Носков Александр",
+  description:
+    "Дизайны интерьеров и 3D-визуализаций: профессиональные проекты жилых и коммерческих пространств с детальными фотореалистичными рендерами. Полные циклы разработки от концепции до реализации",
+  keywords: [
+    "дизайн интерьера",
+    "3D визуализация",
+    "интерьерная визуализация",
+    "рендер интерьера",
+    "услуги дизайнера интерьеров",
+    "портфолио",
+  ],
   openGraph: {
-    title: {
-      template: "VibeViz | %s",
-      default: "VibeViz",
-    },
-    description: "Виз",
+    title: "VibeVis | 3D визуализатор интерьера Носков Александр",
+    description:
+      "Дизайны интерьеров и 3D-визуализаций: профессиональные проекты жилых и коммерческих пространств с детальными фотореалистичными рендерами. Полные циклы разработки от концепции до реализации",
+    url: "https://example.com",
+    siteName: "VibeVis",
     images: [
       {
-        url: `${process.env.NEXT_PUBLIC_HOST}/images/helmet.png`,
-        width: 800,
-        height: 600,
+        url: "/preview.jpg",
+        width: 1200,
+        height: 630,
+        alt: "VibeVis Превью",
       },
     ],
-    locale: "ru_RU",
     type: "website",
   },
   twitter: {
-    title: {
-      template: "VibeViz | %s",
-      default: "VibeViz",
-    },
-    images: [
-      {
-        url: `${process.env.NEXT_PUBLIC_HOST}/images/helmet.png`,
-        width: 800,
-        height: 600,
-      },
-    ],
-    description: "Виз",
+    card: "summary_large_image",
+    title: "VibeVis | 3D визуализатор интерьера Носков Александр",
+    description:
+      "Дизайны интерьеров и 3D-визуализаций: профессиональные проекты жилых и коммерческих пространств с детальными фотореалистичными рендерами. Полные циклы разработки от концепции до реализации",
+    images: ["/preview.jpg"],
+  },
+  icons: {
+    icon: "/favicon.ico",
   },
 };
 
@@ -69,10 +67,6 @@ export default async function RootLayout({
 }>) {
   return (
     <html lang="ru">
-      <head>
-        <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      </head>
       <body
         style={{
           fontFamily: "Ubuntu, Forum, sans-serif",

@@ -49,7 +49,7 @@ export const mainSlides = [
 export const MainSlider: FC = () => {
   return (
     <Box className={classes.container}>
-      <Image src="/lightLogo.png" alt="VibeViz" className={classes.logo} />
+      <Image src="/lightLogo.png" alt="VibeVis" className={classes.logo} />
 
       <Swiper
         className={classes.swiper}

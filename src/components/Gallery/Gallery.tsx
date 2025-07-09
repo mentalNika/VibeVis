@@ -40,7 +40,7 @@ export const Gallery = () => {
           </ActionIcon>
         </Link>
 
-        <Title order={1} fz={25} ta="center" size="xl" ff="forum">
+        <Title order={1} fw={500} fz={32} ta="center" size="xl" ff="forum">
           {data.title}
         </Title>
       </Flex>
