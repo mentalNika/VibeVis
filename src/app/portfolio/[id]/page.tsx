@@ -1,6 +1,4 @@
 import { GalleryPage } from "@/components/pages/GalleryPage/GalleryPage";
-import { portfolioData } from "@/components/pages/PortfolioPage/PortfolioPage";
-import type { Metadata } from "next";
 
 // type PageParams = {
 //   params: { id: string };
