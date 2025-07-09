@@ -26,6 +26,9 @@ export const metadata = {
     default: "VibeViz",
   },
   description: "Виз",
+  icons: {
+    icon: "/favicon.ico", // ← здесь правильно
+  },
 
   openGraph: {
     title: {

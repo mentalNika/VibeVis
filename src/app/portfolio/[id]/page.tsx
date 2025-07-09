@@ -1,5 +1,5 @@
-import { GaleryPage } from "@/components/pages/GaleryPage/GaleryPage";
+import { GalleryPage } from "@/components/pages/GalleryPage/GalleryPage";
 
 export default function page() {
-  return <GaleryPage />;
+  return <GalleryPage />;
 }

@@ -43,11 +43,11 @@ export const Visualisation: FC = () => {
           <SimpleGrid cols={{ base: 1, md: 2 }} spacing={50}>
             <Box h={"100%"} maw={{ base: 500, lg: 850 }}>
               <button
-                onClick={() => handleImageClick("/visualisations/1.jpg")}
+                onClick={() => handleImageClick("/visualisations/1.webp")}
                 aria-label="Открыть картинку"
               >
                 <Image
-                  src="/visualisations/1.jpg"
+                  src="/visualisations/1.webp"
                   w={"100%"}
                   h={{ base: 500, lg: 847 }}
                   style={{ cursor: "pointer" }}
@@ -73,11 +73,11 @@ export const Visualisation: FC = () => {
             </Box>
             <Box h={"100%"} maw={{ base: 500, lg: 850 }}>
               <button
-                onClick={() => handleImageClick("/visualisations/2.jpg")}
+                onClick={() => handleImageClick("/visualisations/2.webp")}
                 aria-label="Открыть картинку"
               >
                 <Image
-                  src="/visualisations/2.jpg"
+                  src="/visualisations/2.webp"
                   w={"100%"}
                   h={{ base: 500, lg: 847 }}
                   style={{ cursor: "pointer" }}

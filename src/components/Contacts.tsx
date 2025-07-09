@@ -7,7 +7,7 @@ export const Contacts: FC = () => {
     <Center>
       <Stack align="center">
         <Image
-          src={"/meContacts.jpg"}
+          src={"/meContacts.webp"}
           w={{ base: "100%", sm: 365, md: 500 }}
           h={{ base: "100%", sm: 365, md: 500 }}
           alt="Носков Александр"

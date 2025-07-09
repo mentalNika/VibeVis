@@ -12,7 +12,7 @@ export interface ServiceSection {
 
 export const services: ServiceSection[] = [
   {
-    img: "/conditions/2.jpg",
+    img: "/conditions/2.webp",
     title: "Стоимость услуг",
     includes: [
       "3 круга правок, доп. круг — 30% от стоимости проекта",
@@ -30,7 +30,7 @@ export const services: ServiceSection[] = [
 
 export const workStages: ServiceSection[] = [
   {
-    img: "/conditions/1.jpg",
+    img: "/conditions/1.webp",
     title: "Этапы работ",
     includes: [
       "Согласование технического задания (обсуждение всех деталей, сроков выполнения и прочего)",
@@ -46,7 +46,7 @@ export const workStages: ServiceSection[] = [
 
 export const techAssignment: ServiceSection[] = [
   {
-    img: "/conditions/3.jpg",
+    img: "/conditions/3.webp",
     title: "Состав технического задания",
     includes: [
       "Обмерный план с высотами всех помещений и проемов",
@@ -64,7 +64,7 @@ export const techAssignment: ServiceSection[] = [
 
 export const additionalServices: ServiceSection[] = [
   {
-    img: "/conditions/4.jpg",
+    img: "/conditions/4.webp",
     title: "Дополнительные услуги",
     includes: [
       "Панорама 360° — 3000 руб. за кадр с разрешением 10000×5000 px",
