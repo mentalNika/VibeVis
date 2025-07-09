@@ -12,7 +12,7 @@ export interface ServiceSection {
 
 export const services: ServiceSection[] = [
   {
-    img: "/conditions/2.webp",
+    img: "/conditions/1.webp",
     title: "Стоимость услуг",
     includes: [
       "3 круга правок, доп. круг — 30% от стоимости проекта",
@@ -30,7 +30,7 @@ export const services: ServiceSection[] = [
 
 export const workStages: ServiceSection[] = [
   {
-    img: "/conditions/1.webp",
+    img: "/conditions/2.webp",
     title: "Этапы работ",
     includes: [
       "Согласование технического задания (обсуждение всех деталей, сроков выполнения и прочего)",
