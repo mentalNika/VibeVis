@@ -1,7 +1,8 @@
 "use client";
-import { Box, Center, Group, Image, Text, Title } from "@mantine/core";
+import { Box, Center, Group, Text, Title } from "@mantine/core";
 import { useInView, motion, AnimatePresence } from "motion/react";
 import React, { FC, useRef } from "react";
+import Image from "next/image";
 
 export const AboutMe: FC = () => {
   const ref = useRef(null);
@@ -20,7 +21,16 @@ export const AboutMe: FC = () => {
         <Box bg={"white.1"} px={10} py={50}>
           <Center>
             <Group gap={60} justify="center">
-              <Image src={"/me.webp"} maw={520} alt="Носков Александр" />
+              <Image
+                src={"/me.webp"}
+                width={520}
+                height={520}
+                alt="Носков Александр"
+                style={{
+                  maxWidth: "100%",
+                  height: "auto",
+                }}
+              />
               <Box maw={500}>
                 <Title pb={10}>Носков Александр</Title>
                 <Text pb={10} fw={500}>

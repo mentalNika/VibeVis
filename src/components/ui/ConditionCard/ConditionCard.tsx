@@ -50,6 +50,7 @@ export const ConditionCard: FC<ConditionCardProps> = ({
                 src={service.img}
                 className={classes.image}
                 alt="Носков Александр"
+                loading="lazy"
               />
               <Box className={classes.content}>
                 <Stack>

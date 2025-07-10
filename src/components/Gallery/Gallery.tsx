@@ -63,6 +63,7 @@ export const Gallery = () => {
               alt={data.title}
               src={img}
               style={{ maxWidth: "100%", marginBottom: 16 }}
+              loading="lazy"
             />
           </a>
         ))}

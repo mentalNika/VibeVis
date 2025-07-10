@@ -6,7 +6,13 @@ export const LogoBlock: FC = () => {
   return (
     <Center pt={{ base: 0, sm: 110 }} pb={60}>
       <Link href="/">
-        <Image src="/logo.png" w={110} alt="VibeVis" visibleFrom="sm" />
+        <Image
+          src="/logo.png"
+          w={110}
+          alt="VibeVis"
+          visibleFrom="sm"
+          loading="lazy"
+        />
       </Link>
     </Center>
   );
