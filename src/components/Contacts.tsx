@@ -1,26 +1,18 @@
-import { Center, Stack, Title, Text, Anchor } from "@mantine/core";
+import { Center, Image, Stack, Title, Text, Anchor } from "@mantine/core";
 import React, { FC } from "react";
 import { SocialBtn } from "./ui/SocialBtn/SocialBtn";
-import Image from "next/image";
 
 export const Contacts: FC = () => {
   return (
     <Center>
       <Stack align="center">
         <Image
-          src={"/meContacts1.jpg"}
-          width={500}
-          height={500}
+          src={"/meContacts.webp"}
+          w={{ base: "100%", sm: 365, md: 500 }}
+          h={{ base: "100%", sm: 365, md: 500 }}
           alt="Носков Александр"
-          style={{
-            borderRadius: "8px",
-            objectFit: "cover",
-            width: "100%",
-            maxWidth: "500px",
-            height: "auto",
-          }}
+          radius={8}
         />
-
         <Title
           fz={{ base: 23, ixs: 30 }}
           fw={400}

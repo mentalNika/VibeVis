@@ -52,7 +52,6 @@ export const Visualisation: FC = () => {
                   h={{ base: 500, lg: 847 }}
                   style={{ cursor: "pointer" }}
                   alt="Интерьерная визуализация"
-                  loading="lazy"
                 />
               </button>
 
@@ -83,7 +82,6 @@ export const Visualisation: FC = () => {
                   h={{ base: 500, lg: 847 }}
                   style={{ cursor: "pointer" }}
                   alt="Предметная визуализация"
-                  loading="lazy"
                 />
               </button>
 
@@ -141,7 +139,6 @@ export const Visualisation: FC = () => {
                   w="100%"
                   style={{ maxHeight: "90vh", objectFit: "cover" }}
                   alt="Визуализация"
-                  loading="lazy"
                 />
               )}
             </Box>

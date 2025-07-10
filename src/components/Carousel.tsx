@@ -84,7 +84,6 @@ export const Carousel: FC = () => {
                   h={{ base: 400, sm: 500, md: 650, lg: 854 }}
                   onClick={() => handleImageClick(slide.img)}
                   style={{ cursor: "pointer" }}
-                  loading="lazy"
                 />
               </SwiperSlide>
             ))}
@@ -130,7 +129,6 @@ export const Carousel: FC = () => {
                   objectFit: "cover",
                 }}
                 alt="Просмотр изображения"
-                loading="lazy"
               />
             )}
           </Box>

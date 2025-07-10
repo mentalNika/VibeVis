@@ -27,7 +27,6 @@ export const PortfolioCards: FC<Props> = ({ data }) => {
                 alt=""
                 radius={15}
                 className={classes.image}
-                loading="lazy"
               />
             </Link>
           </Box>
