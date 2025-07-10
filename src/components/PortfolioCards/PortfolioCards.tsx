@@ -3,8 +3,9 @@ import React, { FC } from "react";
 import { PortfolioItem } from "../pages/PortfolioPage/PortfolioPage";
 import classes from "./PortfolioCards.module.scss";
 
-import { Box, Image, SimpleGrid, Text } from "@mantine/core";
+import { Box, SimpleGrid, Text } from "@mantine/core";
 import Link from "next/link";
+import Image from "next/image";
 
 interface Props {
   data: PortfolioItem[];
@@ -25,7 +26,6 @@ export const PortfolioCards: FC<Props> = ({ data }) => {
                 height={460}
                 width={460}
                 alt=""
-                radius={15}
                 className={classes.image}
               />
             </Link>

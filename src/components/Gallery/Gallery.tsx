@@ -1,20 +1,25 @@
 "use client";
-import { ActionIcon, Box, Flex, Image, rem, Text, Title } from "@mantine/core";
+
+import dynamic from "next/dynamic";
+import { ActionIcon, Box, Flex, rem, Text, Title } from "@mantine/core";
 import { useParams } from "next/navigation";
 import { portfolioData } from "../pages/PortfolioPage/PortfolioPage";
 import classes from "./Gallery.module.scss";
+import { IconArrowNarrowLeft } from "@tabler/icons-react";
+import Link from "next/link";
+import Image from "next/image";
 
-import LightGallery from "lightgallery/react";
+const LightGallery = dynamic(() => import("lightgallery/react"), {
+  ssr: false,
+  loading: () => <Text ta={"center"}>Загрузка галереи...</Text>,
+});
+
 import "lightgallery/css/lightgallery.css";
 import "lightgallery/css/lg-zoom.css";
 import "lightgallery/css/lg-thumbnail.css";
-import "lightgallery/scss/lightgallery.scss";
-import "lightgallery/scss/lg-zoom.scss";
 
 import lgThumbnail from "lightgallery/plugins/thumbnail";
 import lgZoom from "lightgallery/plugins/zoom";
-import { IconArrowNarrowLeft } from "@tabler/icons-react";
-import Link from "next/link";
 
 export const Gallery = () => {
   const params = useParams<{ id: string }>();
@@ -62,6 +67,8 @@ export const Gallery = () => {
             <Image
               alt={data.title}
               src={img}
+              width={900}
+              height={500}
               style={{ maxWidth: "100%", marginBottom: 16 }}
             />
           </a>
