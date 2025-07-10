@@ -19,7 +19,7 @@ export const mainSlides = [
 
   {
     id: 2,
-    img: "/carousel/2.webp",
+    img: "/carousel/2.jpg",
   },
 
   {

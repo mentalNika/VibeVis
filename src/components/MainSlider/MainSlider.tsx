@@ -19,11 +19,11 @@ import { FC } from "react";
 export const mainSlides = [
   {
     id: 1,
-    img: "/mainSlider/1.webp",
+    img: "/mainSlider/1.jpg",
   },
   {
     id: 2,
-    img: "/mainSlider/2.webp",
+    img: "/mainSlider/2.jpg",
   },
 
   {
