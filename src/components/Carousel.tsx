@@ -89,6 +89,7 @@ export const Carousel: FC = () => {
           backgroundOpacity: 0.5,
           blur: 1,
         }}
+        bg={"transparent"}
       >
         <Box pos="relative" w={{ base: "100%", md: "100%" }}>
           <ActionIcon
@@ -103,6 +104,7 @@ export const Carousel: FC = () => {
             style={{
               boxShadow: "0 2px 10px rgba(0, 0, 0, 0.1)",
               zIndex: 10,
+              background: "transparent",
             }}
           >
             <IconX style={{ width: rem(24), height: rem(24) }} />
