@@ -22,10 +22,10 @@ export const metadata: Metadata = {
     siteName: "VibeVis",
     images: [
       {
-        url: "/meContacts.webp",
+        url: "/meContacts.jpg",
         width: 1200,
         height: 630,
-        alt: "VibeVis Превью",
+        alt: "VibeVis Носков Александр",
       },
     ],
     type: "website",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     title: "VibeVis | Контакты — 3D визуализатор Носков Александр",
     description:
       "Связаться с визуализатором для заказа или консультации: профессиональные проекты жилых и коммерческих пространств с детальными фотореалистичными рендерами. Полные циклы разработки от концепции до реализации",
-    images: ["/preview.jpg"],
+    images: ["meContacts.jpg"],
   },
   icons: {
     icon: "/favicon.ico",

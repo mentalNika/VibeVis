@@ -43,7 +43,7 @@ export const metadata: Metadata = {
         url: "/preview.jpg",
         width: 1200,
         height: 630,
-        alt: "VibeVis Превью",
+        alt: "VibeVis Носков Александр",
       },
     ],
     type: "website",
