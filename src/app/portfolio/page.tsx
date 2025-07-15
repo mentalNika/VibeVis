@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     siteName: "VibeVis",
     images: [
       {
-        url: "/portfolio-preview.jpg",
+        url: "/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Портфолио VibeVis",

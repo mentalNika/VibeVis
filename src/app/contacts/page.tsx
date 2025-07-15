@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     siteName: "VibeVis",
     images: [
       {
-        url: "/preview.jpg",
+        url: "/meContacts.webp",
         width: 1200,
         height: 630,
         alt: "VibeVis Превью",
