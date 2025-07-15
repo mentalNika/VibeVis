@@ -18,7 +18,7 @@ import { AnimatePresence, motion, useInView } from "motion/react";
 export const Visualisation: FC = () => {
   const ref = useRef(null);
   const inView = useInView(ref, {
-    once: false,
+    once: true,
     amount: 0.1,
   });
   const [openedImage, setOpenedImage] = useState<string | null>(null);

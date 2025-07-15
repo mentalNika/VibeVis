@@ -26,7 +26,7 @@ export const ConditionCard: FC<ConditionCardProps> = ({
 }) => {
   const ref = useRef(null);
   const inView = useInView(ref, {
-    once: false,
+    once: true,
     amount: 0.1,
   });
 

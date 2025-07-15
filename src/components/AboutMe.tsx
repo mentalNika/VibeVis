@@ -7,7 +7,7 @@ import Image from "next/image";
 export const AboutMe: FC = () => {
   const ref = useRef(null);
   const inView = useInView(ref, {
-    once: false,
+    once: true,
     amount: 0.1,
   });
   return (

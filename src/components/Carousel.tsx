@@ -35,7 +35,7 @@ export const mainSlides = [
 export const Carousel: FC = () => {
   const ref = useRef(null);
   const inView = useInView(ref, {
-    once: false,
+    once: true,
     amount: 0.1,
   });
 
