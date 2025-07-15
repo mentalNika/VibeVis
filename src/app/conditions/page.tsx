@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     title: "VibeVis | Условия работы",
     description:
       "Полная информация об этапах работы, сроках, оплате и правилах взаимодействия при заказе 3D-визуализаций.",
-    url: "https://example.com/work-terms",
+    url: "https://vibe-vis.vercel.app/conditions",
     siteName: "VibeVis",
     images: [
       {

@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     title: "VibeVis | Контакты — 3D визуализатор Носков Александр",
     description:
       "Связаться с визуализатором для заказа или консультации: профессиональные проекты жилых и коммерческих пространств с детальными фотореалистичными рендерами. Полные циклы разработки от концепции до реализации",
-    url: "https://example.com",
+    url: "https://vibe-vis.vercel.app/contacts",
     siteName: "VibeVis",
     images: [
       {

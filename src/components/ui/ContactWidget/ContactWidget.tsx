@@ -52,16 +52,28 @@ export const ContactWidget: FC = () => {
           <Anchor
             pb={15}
             fz={16}
-            href="mailto:example@mail.com"
+            href="mailto:Enmax23@mail.ru"
             className={classes.icon}
           >
             <IconMail size={16} />
-            example@mail.com
+            Enmax23@mail.ru
           </Anchor>
           <Stack gap={15} w={"100%"}>
-            <SocialBtn icon="tg" link="qwff" text="Telegram" />
-            <SocialBtn icon="inst" link="qwff" text="Instagram" />
-            <SocialBtn icon="wa" link="qwff" text="WhatsApp" />
+            <SocialBtn
+              icon="tg"
+              link="https://t.me/+79180650811"
+              text="Telegram"
+            />
+            <SocialBtn
+              icon="inst"
+              link="https://www.instagram.com/vibevis_/"
+              text="Instagram"
+            />
+            <SocialBtn
+              icon="wa"
+              link="https://wa.me/79180650811"
+              text="WhatsApp"
+            />
           </Stack>
         </Stack>
       </Modal>

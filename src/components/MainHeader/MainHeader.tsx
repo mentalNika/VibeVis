@@ -28,15 +28,15 @@ const socialLinks = [
   },
   {
     id: 2,
-    href: "https://t.me/+79180650811",
+    href: "https://wa.me/79180650811",
     icon: IconBrandWhatsappFilled,
     label: "WhatsApp",
   },
   {
     id: 3,
-    href: "https://t.me/+79180650811",
+    href: "https://www.instagram.com/vibevis_/",
     icon: IconCircleArrowUpRightFilled,
-    label: "External Link",
+    label: "Inst",
   },
 ];
 

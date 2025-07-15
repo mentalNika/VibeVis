@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: "VibeVis | Портфолио проектов",
     description:
       "Галерея 3D-визуализаций интерьеров: квартиры, офисы, коммерческие пространства",
-    url: "https://example.com/portfolio",
+    url: "https://vibe-vis.vercel.app/portfolio",
     siteName: "VibeVis",
     images: [
       {

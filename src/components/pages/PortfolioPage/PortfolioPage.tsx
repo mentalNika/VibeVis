@@ -1,3 +1,4 @@
+import { AnimateOnAppear } from "@/components/AnimateOnAppear";
 import { PortfolioCards } from "@/components/PortfolioCards/PortfolioCards";
 import { LogoBlock } from "@/components/ui/LogoBlock/LogoBlock";
 import { Center } from "@mantine/core";
@@ -133,9 +134,11 @@ export const PortfolioPage: FC = () => {
   return (
     <>
       <LogoBlock />
-      <Center px={{ base: 10, xl: 220 }} py={{ base: 30, md: 0 }}>
-        <PortfolioCards data={portfolioData} />
-      </Center>
+      <AnimateOnAppear>
+        <Center px={{ base: 10, xl: 220 }} py={{ base: 30, md: 0 }}>
+          <PortfolioCards data={portfolioData} />
+        </Center>
+      </AnimateOnAppear>
     </>
   );
 };
