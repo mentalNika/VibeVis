@@ -39,7 +39,7 @@ button {
 
 [data-mantine-color-scheme] {
   *:focus-visible {
-    outline: 2px solid rgb(0, 0, 0) !important;
+    outline: (2px solid #373737) !important;
     outline-offset: 5px;
   }
 }
