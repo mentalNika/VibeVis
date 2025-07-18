@@ -28,7 +28,7 @@ export const portfolioData: PortfolioItem[] = [
   },
   {
     id: 2,
-    title: "Квартира студия в стиле LOFT",
+    title: "Квартира-студия в стиле LOFT",
     preview: "/portfolio/kitchen-livroom/1.webp",
     images: [
       "/portfolio/kitchen-livroom/1.webp",
@@ -44,7 +44,7 @@ export const portfolioData: PortfolioItem[] = [
   },
   {
     id: 3,
-    title: "Кухня совмещенная с гостиной",
+    title: "Кухня, совмещенная с гостиной",
     preview: "/portfolio/livingroom/1.webp",
     images: [
       "/portfolio/livingroom/1.webp",
@@ -91,7 +91,7 @@ export const portfolioData: PortfolioItem[] = [
   },
   {
     id: 7,
-    title: "Спальня совмещенная с гардеробом",
+    title: "Спальня, совмещенная с гардеробом",
     preview: "/portfolio/bedroom/1.webp",
     images: [
       "/portfolio/bedroom/1.webp",
@@ -102,7 +102,7 @@ export const portfolioData: PortfolioItem[] = [
   },
   {
     id: 8,
-    title: "Кухня-Гостиная в светлых тонах",
+    title: "Кухня-гостиная в светлых тонах",
     preview: "/portfolio/bedroom2/1.webp",
     images: [
       "/portfolio/bedroom2/1.webp",
