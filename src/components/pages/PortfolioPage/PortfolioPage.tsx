@@ -58,7 +58,7 @@ export const portfolioData: PortfolioItem[] = [
   },
   {
     id: 4,
-    title: "Отель",
+    title: "Ресепшн отеля",
     preview: "/portfolio/hotel/1.webp",
     images: [
       "/portfolio/hotel/1.webp",
